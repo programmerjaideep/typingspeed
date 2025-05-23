@@ -1,0 +1,160 @@
+            *{
+                text-decoration: none;
+                margin: 0;
+                padding: 0;
+            }
+            .navbar{
+                background: radial-gradient(circle, rgba(238, 235, 174, 1) 0%, rgba(172, 200, 217, 0) 74%, rgba(148, 187, 233, 1) 100%);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                padding-right: 15px;
+                padding-left: 15px;
+                height: 60px;
+                position: fixed;
+                width: 100%;
+                z-index: 1000;
+                align-items: center;
+                display: flex; /* Add this */
+            /* Vertically center children */
+            }
+            .navdiv{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .logo a{
+                font-size: 35px;
+                font-weight: 600;
+                color: black;
+            }
+            li{
+                list-style: none;
+                display: inline-block;
+            }
+            li a{
+                font-size: 18px;
+                font-weight: bold;
+                margin-right: 25px;
+                color: black;  
+                text-align: center;  
+            }
+
+            li a:hover{
+                color: white;
+                background-color: black;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+            img{
+                padding-top:3rem ;
+                width: 100%;
+                height: auto;
+            }
+            .image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                
+            }
+            @media (max-width: 768px) {
+                .navbar {
+                    flex-direction: column; /* Stack items vertically */
+                    height: auto; /* Adjust height */
+                }
+                li {
+                    display: block; /* Stack list items */
+                    margin-bottom: 10px; /* Add spacing */
+                }
+            }
+            .keyboard-base {
+                max-width: 1050px;
+                padding: 20px;
+                margin: 20px auto; /* Center the keyboard and add spacing */
+                background-color: rgb(197, 197, 197);
+                border-radius: 10px;
+                display: grid;
+                grid-template-columns: repeat(30, 30px);
+                grid-template-rows: repeat(5, 60px);
+                grid-gap: 5px;
+            }
+
+
+            .key {
+                background: radial-gradient(circle, rgba(238, 235, 174, 1) 0%, rgba(172, 200, 217, 0) 74%, rgba(148, 187, 233, 1) 100%);
+                border: 2px solid black;
+                border-radius: 5px;
+                grid-column: span 2;
+                font-size: 20px;
+                text-align: center;
+                padding-top: 17px;
+            }
+
+            .key:hover {
+            border: 1px solid #eeeeee;
+            
+            }
+
+            .delete {
+                grid-column: span 4;
+            }
+
+            .tab {
+                grid-column: span 3;
+            }
+
+            .backslash {
+                grid-column: span 3;
+            }
+
+            .capslock {
+                grid-column: span 4;
+            }
+
+            .return {
+                grid-column: span 4;
+            }
+
+            .leftshift {
+                grid-column: span 5;
+            }
+
+            .rightshift {
+                grid-column: span 5;
+            }
+
+            .leftctrl {
+                grid-column: span 3;
+            }
+
+            .command {
+                grid-column: span 3;
+
+            }
+
+            .space {
+                grid-column: span 13;
+            }
+            .button {
+                text-align: center;
+                padding-top: 17px;
+            }
+            button {
+                background: radial-gradient(circle, rgba(238, 235, 174, 1) 0%, rgba(172, 200, 217, 0) 74%, rgba(148, 187, 233, 1) 100%);
+                border: 2px solid black;
+                border-radius: 8px;
+                font-size: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+            button:hover {
+                font-size: 25px;
+                transition: 0.3s;
+            }
+            .footer {
+                background: radial-gradient(circle, rgba(238, 235, 174, 1) 0%, rgba(172, 200, 217, 0) 74%, rgba(148, 187, 233, 1) 100%);
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                margin-top: 3rem;
+            }
