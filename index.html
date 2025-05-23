@@ -105,12 +105,10 @@
     <audio id="sound1" src="sound1.mp3" preload="auto"></audio>
     <audio id="sound2" src="sound2.mp3" preload="auto"></audio>
     <script>
-    const sound1 = document.getElementById("sound1");
-    const sound2 = document.getElementById("sound2");
-
-    const keys = document.querySelectorAll(".key");
-
-    keys.forEach((key, index) => {
+        const sound1 = document.getElementById("sound1");
+        const sound2 = document.getElementById("sound2");
+        const keys = document.querySelectorAll(".key");
+        keys.forEach((key, index) => {
         key.addEventListener("click", () => {
             if (index % 2 === 0) {
                 sound1.currentTime = 0;
